@@ -38,7 +38,6 @@ int main()
         mp_si[str]=1;
         for(int i=n-2,j=0;i>0;i--,j++)
         {
-            //cout<<i<<endl;
             int val=suffix[i].length();
             if(val&1)
                 reverse(prefix[j].begin(),prefix[j].end());
@@ -46,7 +45,6 @@ int main()
             strings.pb(output);
             if(mp_si[output]==0)
                 mp_si[output]=n-i;
-            //cout<<suffix[i]<<" "<<prefix[j]<<" "<<output<<" "<<n-i<<endl;
         }
         reverse(str.begin(),str.end());
         strings.pb(str);
